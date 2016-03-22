@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> Browser Rules  </title>
+    <link rel="stylesheet" href="default.min.css">
+    <link href="prettify.css" type="text/css" rel="stylesheet" />
+    <link href="rwd.css" type="text/css" rel="stylesheet" />
+    <script src="prettify.js"></script>
+	<script src="js/rwd.js"></script>
+	
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <img src="http://ui61.maxymiser.com/Content/images/logo.png" alt="maxymiser" />
+        <h1 class="heading">GTS Induction: Browser Rules</h1>
+        <div id="content">
+            <div id="leftbar"></div>
+            <div id="rightbar">
+                <h2 class="firstHeading">Browser Rules Basics</h2>
+                <div class="hr"></div>
+                <h3>Set Browser Rules</h3>
+                <ul class="ul">
+                    <li>Browser Rules are specific inclusion – exclusion settings for different browser types and versions.</li>
+					<li>To configure Browser Rules – open up Site Settings for the ‘Set Browser Rules’ option.</li>
+					<li style="list-style-type: none;" id="image1"></li>
+					<li>Apart from mobile platforms for Android, IOS and Blackberry, it is possible to Include or Exclude popular browsers. </li>
+                </ul>
+                <h3>Adding OS</h3>
+                <ul class="ul" style="list-style-type: none;">
+                    <li>On the screenshot below, option for adding Operation Systems:</li>
+					<li style="list-style-type: none;" id="image2"></li>
+                </ul>
+				<ul class="ul" style="list-style-type: none;">
+                    <li>Device Types, Additional Selection:</li>
+					<li style="list-style-type: none;" id="image3"></li>
+                </ul>
+                <h3>Browser types</h3>
+                <ul>
+                    <li>Browser types are selectable from the following drop-down listing:</li>
+                    <li style="list-style-type: none;" id="image4"></li>
+                </ul>
+                <h2 class="firstHeading">Browser Rules</h2>
+                <div class="hr"></div>
+                <h3>Case-studies</h3>
+                <ul>
+                    <li><span style="color: red;">None of the Campaigns on any given client will work unless corresponding browsers are Included on the level of Domain(!)</span></li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: Suppose, there are no set Browser Rules on the level of Domain, 
+						rather they are defined on the level of Campaign. 
+						As a result, we will encounter several issues: 
+						campaign browser rules are not workable without being defined on the level of Domain. 
+						This is a tendency with new websites added to UI. 
+					</li>
+					<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<th style="border-right: 1px solid #FFF; text-align: center;background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>     </strong></th>
+														<th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Domain level</strong></th>
+														<th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Domain Level Exclude / Non-listed</strong></th>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">Campaign Level Include</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Workable for Campaign</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: #D80000;">Non-workable for Campaign</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">Campaign Level Exclude</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: #D80000;">Non-workable for Campaign</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: #D80000;">Non-workable for Campaign</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: On the level of Domain, all the versions of Chrome are included, while Firefox is excluded. On the level of Campaign – Firefox is included. The end result – no browsers will be included for the campaign in view. 
+					</li>
+					<li style="list-style-type: none;">
+						Making Browser Rules workable both for some Operation Systems, and some browsers exclusively - is best accomplished via inclusion of a number of Operation Systems on the level of Domain with subsequent exclusion of a singular OS(s) on the level of Campaign. 
+					</li>
+					<li style="list-style-type: none;">
+						Let’s consider such an example in the wake: Safari 5 has been setup to run on Windows, Mac, IPhone and IPad; however, you need to have your campaign running only on Windows and Mac. Solution: the IPhone OS has to be excluded on the Campaign level only. Or on the level of Site if no underling campaigns are \ is using IPhone. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: A new browser has to be Included to a particular Campaign, however, is has not been yet included on the Site level. There are several sibling campaigns affected by the same Domain (Site-level) Browser rules. Solution: the browser should be first added on the level of Site. Then the newly included browser on the level of Site has to be included on the level of Campaign, if it is necessary in the sibling campaign; however, if not, it should be excluded from the sibling campaign(s). 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						Usage of wildcard symbol for Including / Excluding ‘<b>1*</b>’ 
+						means that the following versions are encompassed: <b>1.0; 10.0; 11.0; 12.0; 13.0; 14.0; 15.0; 16.0; 17.0; 18.0; 19.0</b>. 
+						In order to include versions <b>10.0</b> through <b>19.0</b>, 
+						but NOT <b>1.0</b>, 
+						it is possible to include <b>1*</b> on the level of Site, 
+						and exclude <b>1.*</b> on the level of Campaign. '<b>1.*</b>' isolates version <b>1.0, 1.1, 1.2,</b> etc., specifically. 
+						This may be particularly handy solution for the Firefox browsers. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						Please note that typing in the word ‘any’ into the ‘Version’ input field for ‘Define custom Browser Rule’ option is disallowed, since Content Generator will not parse it. Please, make sure you input correct browser version so that it is successfully parsed by CG: refer to the next screenshot: 
+					</li>
+					<li style="list-style-type: none;" id="image5"></li>
+                </ul>
+				<!--How Browser Rules Work-->
+				<h2 class="firstHeading">How Browser Rules Work</h2>
+                <div class="hr"></div>
+                <h3>Table-view summary:</h3>
+                <ul>
+                    <li><span style="color: red;">None of the Campaigns on any given client will work unless corresponding browsers are Included on the level of Domain(!)</span></li>
+					<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<th colspan="3" style="border-right: 1px solid #FFF; text-align: center;background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Browser Rule</strong></th>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specified on Site Level</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specified on Campaign Level</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Result</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: red;">Excluded</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: red;">Excluded</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: red;">Excluded</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: red;">Not Specified</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">Not Specified
+														<br/>None other (!) <br/> 'Include Campaign Browser Rule' specified</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">Not Specified
+														<br/>Some other (!) <br/> 'Include Campaign Browser Rule' specified</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						The following browsers are included on the level of Site: 
+						<br/>IE 9.*, <br/>FireFox 13, <br/>FireFox 14. <br/>The following browsers are included on the level of Campaign: <br/>FireFox 13, <br/>FireFox 11.<br/> 
+						Using the information in the rule combinations table and analyzing each browser separately, 
+						the only browser that ends up being ‘Included’ is Firefox 13. 
+						Let’s consider the following table for this case-study: 
+					</li>
+					<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Site Level</th>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Campaign Level</th>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Result</th>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included IE 9.*</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+															Not specified <br/>
+															Other Include (!) Campaign Browser Rule specified<br/>
+														</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: green;">Included FF 13</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included FireFox 13</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: green;">Included FF 14</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+														Not specified<br/>
+														Other Include (!) Campaign Browser Rule specified<br/>
+														</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">Not Specified</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: red;">Excluded</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+							Chrome * has been included on the level of Site, while Firefox * has been excluded. On the level of Campaign Firefox * was included. In the result of such Browser Rules, neither Chrome nor Firefox will work for the given campaign. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						On the level of Site the following Desktop browsers were Include: IE8, IE9, Chrome*, Firefox*, Safari*. The following Mobile devices were included on the level of Site: iPhone OS, Android, RIMOS. On the level of Campaign only Mobile devices with their browsers were included. In the result, the campaign will end up with only mobile devices and browsers as included. If Mobile devices and their browsers are excluded on the level of Campaign, Desktop browsers only will be included to the campaign. This is precisely so, because exclusion logic on the level of Campaign does not preclude Inclusion Browser Rules on the level of Site. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						The following browsers have been added on the level of Site: IE8, IE9, Firefox20. On the level of campaign only IE8 has been included. In the result, we will have IE8 included for the campaign in view. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case-study</b>: 
+						No Browser Rules are defined on the Campaign level; rather on the level of Site. How will they apply to the campaign in view? 
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Site Level</th>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Campaign Level</th>
+														<th style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Result</th>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included IE 9.*</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+															Not specified <br/>
+															None other ‘Include’ Campaign Browser Rule specified
+														</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included IE*</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: green;">Included Firefox*</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">
+															Not specified
+															None other ‘Include’ Campaign Browser Rule specified
+														</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: green;">Included Firefox*</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+				</ul>
+				<!--Listing of Desktop Browsers Involved in Maxymiser Testing-->
+				<h2 class="firstHeading">Listing of Desktop Browsers Involved in Maxymiser Testing</h2>
+                <div class="hr"></div>
+                <h3>Table-view summary:</h3>
+                <ul>
+                    <li><span style="color: black;">Please note that the Browser Rules described in the following tables are subject to updates in new releases of UI. </span></li>
+					<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Browser</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Comments</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+Firefox (Any version)
+</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+														Excluding Firefox - 1.*, Firefox - 2.*, Firefox - 3.*, Firefox - 4.*
+i.e., QA has to be performed in the latest version(s) only
+														</td>
+														
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">Safari 5</td>
+														<td rowspan="2" style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+														To exclude \ include all of the Mac OS in the list: it is mandatory to select all of the systems from the list below:
+
+Mac OS
+Mac OS X
+Mac OS X 10.3 Panther
+Mac OS X 10.4 Tiger
+Mac OS X 10.5 Leopard
+Mac OS X 10.6 Snow Leopard 
+
+														</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">Safari 6</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+Chrome (Any version)
+</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+															Any OS ( excluding Any – iPhone OS - Any) 
+															Until the next release: since Chrome, Safari and Firefox are workable on IPhone, IPads and Android OS – we have to exclude IPhone OS for testing desktop browser versions only.
+														</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">IE 8</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">Any OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">IE 9</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">Any OS</td>
+													</tr>
+													<tr>
+														<td rowspan="2" style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">IE 10</td>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+														IE10 could be included into campaign as Client requests: in this case, Safari 5 is excluded from QA. Two following inclusion options are available:														
+														</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;  color: black;">
+<br/>(1) IE10 – Any OS means QA will be performed in three modes: Standard, Metro, EPM (Enhanced Protected Mode), which equals 3 browsers and time for campaign QA could be extended. 
+Please bear in mind that OPC tool is not stable in IE10 in Metro and EPM modes, which causes inconveniences for QA. We have to use UI weightings to check variants, which also makes QA more time-consuming. MPT will be released to apply for IE10 Metro mode. 
+<br/>(2) IE10 – Windows 7 (excluding Windows 8) – means QA will be performed only in Standard mode (Metro Mode, EPM are not available). 
+														
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+					</ul>
+<!---->
+				<h2 class="firstHeading">Listing of Tablets for Maxymiser Testing</h2>
+                <div class="hr"></div>
+                <h3>Table-view summary:</h3>
+                <ul>
+				<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  Android OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  iPhone OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  Rim OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+															NOTE: Tablet(s) recognition script by screen resolution and userAgent string is added. Windows Phone OS – can’t be included as it will mean inclusion of IE9 on desktops. No custom solution for recognition exists so far. 
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+				</ul>
+				
+				<h2 class="firstHeading">Listing of Mobile Phones for Maxymiser Testing</h2>
+                <div class="hr"></div>
+                <h3>Table-view summary:</h3>
+                <ul>
+				<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  Android OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  iPhone OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Any browser – Any version -  Rim OS</td>
+													</tr>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center; color: black;">
+															NOTE: Script for recognition of Mobile Phones by screen resolution and userAgent string is added. Windows Phone OS – can’t be included as it will mean inclusion of IE9 on desktops. No custom solution for recognition existing so far
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+				</ul>
+                <ul>
+					<li style="list-style-type: none;">
+					<b>Case study</b>: <br/>
+					If Chrome is ‘Excluded’ on Site Level and included on ‘Campaign Level’, Chrome inclusion on the level of Campaign will be overridden. No content generations will be made.
+					</li>
+					<li style="list-style-type: none;">
+					<b>Case study</b>: <br/>
+						On the screenshot below, is a hands-on example from UI configurations on Browser Rules. Please note that IE6 was redundantly excluded from both the Site Level and Campaign level. It is sufficient to do so on the Level of Site only. 
+					</li>
+					<li style="list-style-type: none;" id="image6"></li>
+					<li style="list-style-type: none;">
+					<b>Case study</b>: <br/>
+						Case-study: in the example below, browser rules are not optimally assigned. It is not a good idea to manually include every type of Firefox browser: it is better to use wildcard to include all the Firefox browsers with exclusion of the unnecessary Firefox versions. 
+					</li>
+					<li style="list-style-type: none;" id="image7"></li>
+					<li style="list-style-type: none;">
+						To include all Firefox versions, it is possible to go for the next option: 
+					</li>
+					<li style="list-style-type: none;" id="image8"></li>
+					<li style="list-style-type: none;">
+						And to exclude the unnecessary variations of Firefox version 4.*, the following method is to be used (by pressing the ‘Exclude’ button): 
+					</li>
+					<li style="list-style-type: none;" id="image9"></li>
+					<li style="list-style-type: none;">
+						<b>Case study</b>:<br/>
+					How to include a single new browser for a single 'Test' Campaign? There is a set of Excluded/Included Domain-Level Browser Rules, and there are several Campaigns for the Domain.
+					</li>
+					<li style="list-style-type: none;">
+					<b>Incorrect approach</b>:<br/>
+						Manager includes the browser on the Campaign Level to the 'Test' Campaign. In the result, the Campaign will stop working for all the browsers across the board. 
+					</li>
+					<li style="list-style-type: none;">
+					<b>Correct approach</b>:<br/>
+						Manager Includes the Browser on the Domain Level, with exclusion rules specified for all the campaigns with exception of the 'Test' Campaign.
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case study</b>:<br/>
+						<b>Firefox 5</b> through <b>Firefox 17</b> 
+						have to be excluded from your campaign. The best way to approach this is to <b>Include Firefox *</b> 
+						on the level of Site. Then, exclude Firefox 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 15, 16, and 17 on the level of Site. On the level campaign Browser Rules: no rules are necessary to set. However, if there are several campaigns running under the given domain, Exclusion browser rules should be assigned on the level of a singular campaign in order to leave other campaigns unaffected thereby. 
+					</li>
+					<li style="list-style-type: none;">
+						<b>Case study</b>:<br/>
+						<b>Firefox 10</b> through <b>Firefox 19</b> should be included into a given campaign. The best way to approach this is to ‘Include’ Firefox 1* and ‘Exclude’ FF1.* on the Domain level. ‘Include’ Firefox 1* provides coverage of any Firefox version beginning with ‘1’, including 100 through 199, thereby excluding any Firefox version from 20 through 99 and from 2 through 9. Exclude 1.* rule will provide exclusion of version 1. The result will be as follows: campaign will be working for the following versions – Firefox 10 through Firefox 19. However, if there are several campaigns running under the given Domain, it is best to assign Exclusion rules on the level of Campaign.
+					</li>
+					<li style="list-style-type: none;">
+						<table style="border: 2px solid #EEE; width: 85%;">
+								<tbody>
+									<tr>
+										<td colspan="3" style="text-align: justify;">
+											<table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+												<tbody>
+													<tr>
+														<td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">
+															Please note that UI does not apply conventional Regular Expression rules, with the only exception of the wildcard ‘*’. This is done to avoid Content Generator vulnerability. 
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</li>
+				</ul>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="wrapper">
+            <div id="copyright">
+                <span>© 2005-2011 Maxymiser LTD.<br/>
+			Your use of this software indicates acceptance of current 
+			<a href="#" style="text-decoration:underline;">Terms of Use</a><br/>
+			Release Notes for current Maxymiser version.
+			</span>
+            </div>
+            <div id="contact">Please call US: +1 212 300 6360
+                <br/> UK: +44 (0) 203 375 0100
+                <br/> DE: +49 (0) 204 569 4374
+                <br/> You can also contact us or visit our <a href="http://www.maxymiser.com/">website</a>
+            </div>
+            <br style="clear: both" />
+        </div>
+    </div>
+</body>
+
+</html>
